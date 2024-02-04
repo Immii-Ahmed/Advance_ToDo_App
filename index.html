@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navBar">
+        <ul class="list_Items">
+            <li>List Items</li>
+            <li>Recents</li>
+            <li>Bin</li>
+            <li>History</li>
+            <li>Modified</li>
+        </ul>
+        <div class="buttons">
+            <input type="button" value="Register" class="button">
+            <input type="button" value="Login" class="button">
+        </div>
+
+        <div class="hamburger">
+            <img src="images/menu.svg" alt="Menu Icon" style="width: 70px; height: 70px;">
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Add To The List</h1>
+        <form action="" method="post" class="form_container">
+            <input type="text" name="" id="Add-toList" placeholder="Enter something...">
+            <input type="button" value="Add" class="button" onclick="AddToList()">
+        </form>
+    </main>
+
+    <div class="listedItem">
+        <div class="search">
+            <input type="text" name="" id="searchInput" placeholder="Search Items...">
+        </div>
+        <div class="items" id="items">
+        </div>
+    </div>
+<div class="updateModal" id="updateModal">
+    <input type="text" name="" id="" placeholder="Update Item">
+    <input type="button" value="Update" class="action_button updateButton" style="margin: 2rem 0rem;">
+    <input type="button" value="Cancel" class="action_button updateButton">
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
